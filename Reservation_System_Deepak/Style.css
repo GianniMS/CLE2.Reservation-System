@@ -1,0 +1,251 @@
+/*Universal styling for all bodies*/
+/*Light grey background and Roboto sans-serif font*/
+body {
+    background: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Styling for all header 1's with class .titel*/
+/*Bold font-weight, black colored text and sizing */
+.titel {
+    font-weight: bold;
+    text-decoration-color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    font-size: 4em;
+}
+
+/*Styling for the information tabs on the homepage */
+/*General sizing of the tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vh;
+    margin: 5vh auto;
+    margin-bottom: 1vh;
+    padding: 3vh;
+}
+
+/*Removes the input visual*/
+.tabs input[type="radio"] {
+    display: none;
+}
+
+/*Makes the label from the tab a certain size, changes its background color to light grey and sets font-weight to bold*/
+.tabs label {
+    padding: 3vh;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+/*Makes the background color of the tab white and sets its size*/
+.tabs .tab {
+    width: 100%;
+    padding: 2vh;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+
+/*Sets font-size for the header in the labels*/
+.tabs .tab h2 {
+    font-size: 3em;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+/*Makes it so the selected label gets a color change*/
+.tabs input[type="radio"]:checked + label {
+    background: #ffffff;
+}
+
+/*Universal margin and padding set to 0*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Sets the size and background-color for the header divisions*/
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #de1e1d;
+}
+
+/*Sets the properties for the system buttons*/
+.sysbutton {
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #de1e1d;
+    color: #ffffff;
+    border: 2px solid #de1e1d;
+    transition-duration: 0.5s;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+/*Creates an effect when you hover over the button*/
+.sysbutton:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Sets the size for the input form divisions*/
+.formdiv {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    width: 50%;
+}
+
+/*The acutal properties for the input forms*/
+.formdiv input {
+    width: 80%;
+    transition-duration: 0.4s;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 2vh;
+}
+
+/*Gives the selected input form a border highlight*/
+.formdiv input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+/*Positioning properties for certain divisions*/
+.backlog {
+    margin-top: 2vh;
+}
+
+.backroute {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Positioning for submit buttons*/
+.submitbut {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Properties for the overview table*/
+/*Sets table size and text alignment*/
+table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/*Positions the table header text in the center*/
+th {
+    text-align: center;
+}
+
+/*Creates a border for all table properties*/
+table, th, tr, td {
+    border: 1px solid black;
+}
+
+/*Sets the position for the division around the table*/
+.tablediv {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+/*Positioning for the buttons inside the table*/
+.tdbut {
+    text-align: center;
+}
+
+/*Properties for the delete button inside the tabel*/
+.butdel {
+    text-align: center;
+    background-color: #de1e1d;
+    color: #ffffff;
+    border: 2px solid #de1e1d;
+    transition-duration: 0.5s;
+    border-radius: 0px;
+}
+
+/*On hover effect for the delete button*/
+.butdel:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Properties for edit button inside the tabel*/
+.butedit {
+    text-align: center;
+    background-color: #008000;
+    color: #ffffff;
+    border: 2px solid #008000;
+    transition-duration: 0.5s;
+    border-radius: 0px;
+}
+
+/*On hover effect for the edit button*/
+.butedit:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Properties for the update button on the edit page*/
+.updatebut {
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #008000;
+    color: #ffffff;
+    border: 2px solid #008000;
+    transition-duration: 0.5s;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/*On hover effect for the update button*/
+.updatebut:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Size for the image top left on the homepage*/
+.imgbp {
+    width: 5vw;
+    height: 10vh;
+}
+
+/*Styling for update confirmation*/
+.updatemsg {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: -2vh;
+    text-align: center;
+    color: #008000;
+}
+
+/*Styling for serv side validation message*/
+.text-danger {
+color: #de1e1d;
+    margin-top: -1vh;
+}
+
