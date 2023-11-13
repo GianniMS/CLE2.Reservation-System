@@ -1,6 +1,6 @@
-# CLE2.Reservation-System
-The code for my CLE02 project.
-A reservation system designed and developed for my barber using PHP.
+# Reservation System | CMGT Hogeschool Rotterdam 
+This is the code for the reservation system I made for my barber. I made it using Php. I made this for my studies at CMGT Hogeschool Rotterdam
 
-Feel free to take a look!
-- GMS
+Take a look!
+- GianniMS
+
